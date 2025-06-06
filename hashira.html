@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hashira</title>
+  <style>
+    .character-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #f4a261;
+      border-radius: 10px;
+      background: #fff;
+      width: 300px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .character-container img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .character-details {
+      flex-grow: 1;
+    }
+    .character-container h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #2c2c2c;
+    }
+    .character-container .subtitle {
+      color: #666;
+      font-size: 0.9em;
+    }
+    .character-container .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: none;
+      background: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      color: #f4a261;
+    }
+    .character-grid {
+      display: block; /* Changed from flex to block for vertical stacking */
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-content">
+    <header>
+      <button id="burger-btn" aria-label="Toggle sidebar">☰</button>
+      <img src="Images/logo.png" alt="Header Image" id="logo-img"/>
+      <input type="text" id="search-bar" placeholder="Search characters..." aria-label="Search characters" />
+    </header>
+    <nav class="sidebar" id="sidebar">
+      <button id="sidebar-close" aria-label="Close sidebar">×</button>
+      <ul>
+        <li><a href="index.html" data-section="welcome">Home</a></li>
+        <li><a href="slayers.html" data-section="demon-slayers">Demon Slayers</a></li>
+        <li><a href="demons.html" data-section="demons">Demons</a></li>
+        <li><a href="hashira.html" data-section="hashira">Hashira</a></li>
+        <li><a href="upper-moons.html" data-section="upper-moons">Upper Moons</a></li>
+        <li><a href="favorites.html" data-section="favorites">Favorites</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="character-list">
+        <div class="category" id="hashira">
+          <h2>Hashira</h2>
+          <div class="character-grid">
+            <!-- Giyu Tomioka -->
+            <div class="character-container" data-name="Giyu Tomioka" data-section="hashira">
+              <button class="close-btn" aria-label="Close Giyu Tomioka card">×</button>
+              <img src="Images/Slayers/Giyu.webp" alt="Giyu Tomioka" loading="lazy" />
+              <div class="character-details">
+                <h3>Giyu Tomioka</h3>
+                <span class="subtitle">Water Hashira</span>
+                <p>A stoic and skilled Demon Slayer who spared Nezuko, believing in Tanjiro's cause.</p>
+                <p><strong>Family:</strong> Sister: Tsutako Tomioka; parents unknown.</p>
+                <p><strong>Physical Abilities:</strong> Superior strength, speed, and precision.</p>
+                <p><strong>Breathing Style:</strong> Water Breathing</p>
+                <p><strong>Forms:</strong> Water Surface Slash, Water Wheel, Flowing Dance, Striking Tide, Blessed Rain After the Drought, Whirlpool, Drop Ripple Thrust, Waterfall Basin, Splashing Water Flow, Turbulent, Constant Flux, Dead Calm</p>
+              </div>
+            </div>
+            <!-- Kyojuro Rengoku -->
+            <div class="character-container" data-name="Kyojuro Rengoku" data-section="hashira">
+              <button class="close-btn" aria-label="Close Kyojuro Rengoku card">×</button>
+              <img src="Images/Slayers/Kyojuro.webp" alt="Kyojuro Rengoku" loading="lazy" />
+              <div class="character-details">
+                <h3>Kyojuro Rengoku</h3>
+                <span class="subtitle">Flame Hashira</span>
+                <p>A passionate and honorable Demon Slayer, dedicated to protecting others.</p>
+                <p><strong>Family:</strong> Father: Shinjuro Rengoku, Mother: Ruka Rengoku, Brother: Senjuro Rengoku</p>
+                <p><strong>Physical Abilities:</strong> Exceptional strength, endurance, and speed.</p>
+                <p><strong>Breathing Style:</strong> Flame Breathing</p>
+                <p><strong>Forms:</strong> Unknowing Fire, Rising Scorching Sun, Blazing Universe, Blooming Flame Undulation, Flame Tiger, Rengoku</p>
+              </div>
+            </div>
+            <!-- Tengen Uzui -->
+            <div class="character-container" data-name="Tengen Uzui" data-section="hashira">
+              <button class="close-btn" aria-label="Close Tengen Uzui card">×</button>
+              <img src="Images/Slayers/Tengen.webp" alt="Tengen Uzui" loading="lazy" />
+              <div class="character-details">
+                <h3>Tengen Uzui</h3>
+                <span class="subtitle">Sound Hashira</span>
+                <p>A flamboyant former ninja turned Demon Slayer, known for his flashy style.</p>
+                <p><strong>Family:</strong> Wives: Makio, Suma, Hinatsuru; siblings largely killed in ninja clan.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced speed, strength, and hearing from ninja training.</p>
+                <p><strong>Breathing Style:</strong> Sound Breathing</p>
+                <p><strong>Forms:</strong> Roar, Constant Resounding Slashes, String Performance</p>
+              </div>
+            </div>
+            <!-- Mitsuri Kanroji -->
+            <div class="character-container" data-name="Mitsuri Kanroji" data-section="hashira">
+              <button class="close-btn" aria-label="Close Mitsuri Kanroji card">×</button>
+              <img src="Images/Slayers/Mitsuri.webp" alt="Mitsuri Kanroji" loading="lazy" />
+              <div class="character-details">
+                <h3>Mitsuri Kanroji</h3>
+                <span class="subtitle">Love Hashira</span>
+                <p>A cheerful and strong Demon Slayer driven by love and protecting others.</p>
+                <p><strong>Family:</strong> Parents and siblings alive, details unspecified.</p>
+                <p><strong>Physical Abilities:</strong> Superhuman strength (eight times normal), flexibility, and agility.</p>
+                <p><strong>Breathing Style:</strong> Love Breathing</p>
+                <p><strong>Forms:</strong> Shivers of First Love, Love Pangs, Catlove Shower, Swaying Love, Wildclaw, Cat-Legged Winds of Love</p>
+              </div>
+            </div>
+            <!-- Muichiro Tokito -->
+            <div class="character-container" data-name="Muichiro Tokito" data-section="hashira">
+              <button class="close-btn" aria-label="Close Muichiro Tokito card">×</button>
+              <img src="Images/Slayers/Muichiro.webp" alt="Muichiro Tokito" loading="lazy" />
+              <div class="character-details">
+                <h3>Muichiro Tokito</h3>
+                <span class="subtitle">Mist Hashira</span>
+                <p>A young, aloof genius Demon Slayer with a tragic past.</p>
+                <p><strong>Family:</strong> Twin Brother: Yuichiro Tokito; parents deceased.</p>
+                <p><strong>Physical Abilities:</strong> Exceptional speed, reflexes, and swordsmanship.</p>
+                <p><strong>Breathing Style:</strong> Mist Breathing</p>
+                <p><strong>Forms:</strong> Low Clouds, Distant Haze, Eight-Layered Mist, Scattering Mist Splash, Shifting Flow Slash, Sea of Clouds and Haze, Lunar Dispersing Mist, Obscuring Clouds</p>
+              </div>
+            </div>
+            <!-- Shinobu Kocho -->
+            <div class="character-container" data-name="Shinobu Kocho" data-section="hashira">
+              <button class="close-btn" aria-label="Close Shinobu Kocho card">×</button>
+              <img src="Images/Slayers/Shinobu.webp" alt="Shinobu Kocho" loading="lazy" />
+              <div class="character-details">
+                <h3>Shinobu Kocho</h3>
+                <span class="subtitle">Insect Hashira</span>
+                <p>A gentle yet vengeful Demon Slayer using poison to kill demons.</p>
+                <p><strong>Family:</strong> Sister: Kanae Kocho; parents killed by demons.</p>
+                <p><strong>Physical Abilities:</strong> High agility and precision, lacks strength for decapitation.</p>
+                <p><strong>Breathing Style:</strong> Insect Breathing</p>
+                <p><strong>Forms:</strong> Butterfly Dance: Caprice, Dance of the Bee Sting: True Flutter, Dance of the Dragonfly: Compound Eye Hexagon, Dance of the Centipede: Hundred-Legged Zigzag</p>
+              </div>
+            </div>
+            <!-- Obanai Iguro -->
+            <div class="character-container" data-name="Obanai Iguro" data-section="hashira">
+              <button class="close-btn" aria-label="Close Obanai Iguro card">×</button>
+              <img src="Images/Slayers/Obanai.webp" alt="Obanai Iguro" loading="lazy" />
+              <div class="character-details">
+                <h3>Obanai Iguro</h3>
+                <span class="subtitle">Serpent Hashira</span>
+                <p>A strict, snake-loving Demon Slayer with a harsh upbringing.</p>
+                <p><strong>Family:</strong> Family killed by a snake demon; raised by abusive relatives.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced agility, flexibility, and swordsmanship.</p>
+                <p><strong>Breathing Style:</strong> Serpent Breathing</p>
+                <p><strong>Forms:</strong> Winding Serpent Slash, Venom Fangs of the Narrow Head, Coil Choke, Twin-Headed Reptile, Slithering Serpent</p>
+              </div>
+            </div>
+            <!-- Sanemi Shinazugawa -->
+            <div class="character-container" data-name="Sanemi Shinazugawa" data-section="hashira">
+              <button class="close-btn" aria-label="Close Sanemi Shinazugawa card">×</button>
+              <img src="Images/Slayers/Sanemi.webp" alt="Sanemi Shinazugawa" loading="lazy" />
+              <div class="character-details">
+                <h3>Sanemi Shinazugawa</h3>
+                <span class="subtitle">Wind Hashira</span>
+                <p>A fierce, scarred Demon Slayer with a hatred for demons.</p>
+                <p><strong>Family:</strong> Brother: Genya Shinazugawa; mother turned demon, killed family.</p>
+                <p><strong>Physical Abilities:</strong> Immense strength, speed, and endurance.</p>
+                <p><strong>Breathing Style:</strong> Wind Breathing</p>
+                <p><strong>Forms:</strong> Dust Whirlwind Cutter, Claws-Purifying Wind, Clean Storm Wind Tree, Rising Dust Storm, Cold Mountain Wind, Black Wind Mountain Mist, Gale, Sudden Gusts, Primary Gale Slash, Idaten Typhoon</p>
+              </div>
+            </div>
+            <!-- Gyomei Himejima -->
+            <div class="character-container" data-name="Gyomei Himejima" data-section="hashira">
+              <button class="close-btn" aria-label="Close Gyomei Himejima card">×</button>
+              <img src="Images/Slayers/Gyomei.webp" alt="Gyomei Himejima" loading="lazy" />
+              <div class="character-details">
+                <h3>Gyomei Himejima</h3>
+                <span class="subtitle">Stone Hashira</span>
+                <p>A blind, gentle giant and the strongest Demon Slayer.</p>
+                <p><strong>Family:</strong> Orphaned; raised children before they were killed by a demon.</p>
+                <p><strong>Physical Abilities:</strong> Unmatched strength, heightened senses despite blindness.</p>
+                <p><strong>Breathing Style:</strong> Stone Breathing</p>
+                <p><strong>Forms:</strong> Serpentinite Bipolar, Upper Smash, Stone Skin, Volcanic Rock, Rapid Conquest, Arcs of Justice</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal for enlarged image -->
+    <div id="image-modal" class="modal">
+      <span id="modal-close" class="modal-close" aria-label="Close modal">×</span>
+      <img class="modal-content" id="modal-image" alt="Enlarged Character Image" />
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorites</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="main-content">
+ <header>
+      <button id="burger-btn" aria-label="Toggle sidebar">☰</button>
+      <input type="text" id="search-bar" placeholder="Search characters..." aria-label="Search characters" />
+    </header>
+    <nav class="sidebar" id="sidebar">
+      <button id="sidebar-close" aria-label="Close sidebar">×</button>
+      <ul>
+        <li><a href="index.html" data-section="welcome">Back to Welcome Page</a></li>
+        <li><a href="slayers.html" data-section="demon-slayers">Demon Slayers</a></li>
+        <li><a href="demons.html" data-section="demons">Demons</a></li>
+        <li><a href="hashira.html" data-section="hashira">Hashira</a></li>
+        <li><a href="upper-moons.html" data-section="upper-moons">Upper Moons</a></li>
+        <li><a href="favorites.html" data-section="favorites">Favorites</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="character-list">
+        <div class="category" id="favorites">
+          <h2>Favorites</h2>
+          <div class="character-grid" id="favorites-grid">
+            <!-- Favorites will be dynamically populated here -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal for enlarged image -->
+    <div id="image-modal" class="modal">
+      <span id="modal-close" aria-label="Close modal">&times;</span>
+      <img class="modal-content" id="modal-image" alt="Enlarged Character Image" />
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
