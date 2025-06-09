@@ -229,118 +229,116 @@ main.sidebar-open {
 .category h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  padding-left: 20px;
 }
 
 .character-grid {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 10px;
-  padding-bottom: 20px;
-  scroll-snap-type: x mandatory;
+  display: block; /* Vertical stacking for consistency */
+  padding: 10px;
 }
 
-.character-card {
-  background-color: #333;
-  border-radius: 8px;
-  padding: 15px;
+.character-container {
   position: relative;
-  min-width: 250px;
-  max-width: 250px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  transition: transform 0.2s;
-  scroll-snap-align: start;
+  padding: 10px;
+  margin: 14px 0;
+  border: 2px solid #f4a261;
+  border-radius: 10px;
+  background: #fff;
+  width: 1200px; /* Wide horizontal containers */
+  min-height: 300px; /* Slightly taller for content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.character-card:hover {
-  transform: scale(1.05);
+@media (max-width: 1220px) {
+  .character-container {
+    width: 100%; /* Responsive width */
+    box-sizing: border-box;
+  }
 }
 
-.character-card.water-breathing { background-color: var(--water-breathing); }
-.character-card.thunder-breathing { background-color: var(--thunder-breathing); }
-.character-card.beast-breathing { background-color: var(--beast-breathing); }
-.character-card.flame-breathing { background-color: var(--flame-breathing); }
-.character-card.sound-breathing { background-color: var(--sound-breathing); }
-.character-card.love-breathing { background-color: var(--love-breathing); }
-.character-card.mist-breathing { background-color: var(--mist-breathing); }
-.character-card.insect-breathing { background-color: var(--insect-breathing); }
-.character-card.serpent-breathing { background-color: var(--serpent-breathing); }
-.character-card.wind-breathing { background-color: var(--wind-breathing); }
-.character-card.stone-breathing { background-color: var(--stone-breathing); }
-.character-card.flower-breathing { background-color: var(--flower-breathing); }
-.character-card.sun-breathing { background-color: var(--sun-breathing); }
-.character-card.no-breathing { background-color: var(--no-breathing); }
-.character-card.muzan-blood { background-color: var(--muzan-blood); }
-.character-card.nezuko-blood { background-color: var(--nezuko-blood); }
-.character-card.kokushibo-moon { background-color: var(--kokushibo-moon); }
-.character-card.doma-ice { background-color: var(--doma-ice); }
-.character-card.akaza-shock { background-color: var(--akaza-shock); }
-.character-card.hantengu-emotion { background-color: var(--hantengu-emotion); }
-.character-card.gyokko-water { background-color: var(--gyokko-water); }
-.character-card.daki-sash { background-color: var(--daki-sash); }
-.character-card.gyutaro-sickle { background-color: var(--gyutaro-sickle); }
-.character-card.kaigaku-electro { background-color: var(--kaigaku-electro); }
-.character-card.rui-thread { background-color: var(--rui-thread); }
-.character-card.enmu-dream { background-color: var(--enmu-dream); }
-.character-card.kyogai-drum { background-color: var(--kyogai-drum); }
-.character-card.tamayo-bewitch { background-color: var(--tamayo-bewitch); }
-.character-card.yushiro-blindfold { background-color: var(--yushiro-blindfold); }
-.character-card.susamaru-temari { background-color: var(--susamaru-temari); }
-.character-card.yahaba-arrow { background-color: var(--yahaba-arrow); }
-
-.favorite-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.favorite-btn.favorited {
-  color: red;
-}
-
-.character-img {
-  width: 100%;
-  max-width: 200px;
-  max-height: 200px;
-  object-fit: contain;
+.character-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 5px;
-  cursor: pointer;
+  margin-right: 10px;
 }
 
 .character-details {
-  text-align: center;
-  width: 100%;
+  flex-grow: 1;
 }
 
-.character-details h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  margin: 10px 0;
+.character-container h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #2c2c2c;
 }
 
-.character-details h4 {
-  font-family: 'Poppins', sans-serif;
+.character-container .subtitle {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.character-container .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #f4a261;
+}
+
+.character-container .favorite-btn {
+  position: absolute;
+  top: 5px;
+  right: 50px; /* Adjusted to avoid overlap with close-btn */
+  background: none;
+  border: none;
   font-size: 16px;
-  margin: 8px 0 5px;
+  cursor: pointer;
 }
 
-.character-details p, .character-details ul {
-  font-size: 14px;
-  margin: 5px 0;
+.character-container .favorite-btn.favorited {
+  color: red;
 }
 
-.character-details ul {
-  padding-left: 20px;
-  text-align: left;
-}
+/* Aesthetic-specific colors */
+.character-container.water-breathing { background-color: var(--water-breathing); }
+.character-container.thunder-breathing { background-color: var(--thunder-breathing); }
+.character-container.beast-breathing { background-color: var(--beast-breathing); }
+.character-container.flame-breathing { background-color: var(--flame-breathing); }
+.character-container.sound-breathing { background-color: var(--sound-breathing); }
+.character-container.love-breathing { background-color: var(--love-breathing); }
+.character-container.mist-breathing { background-color: var(--mist-breathing); }
+.character-container.insect-breathing { background-color: var(--insect-breathing); }
+.character-container.serpent-breathing { background-color: var(--serpent-breathing); }
+.character-container.wind-breathing { background-color: var(--wind-breathing); }
+.character-container.stone-breathing { background-color: var(--stone-breathing); }
+.character-container.flower-breathing { background-color: var(--flower-breathing); }
+.character-container.sun-breathing { background-color: var(--sun-breathing); }
+.character-container.no-breathing { background-color: var(--no-breathing); }
+.character-container.muzan-blood { background-color: var(--muzan-blood); }
+.character-container.nezuko-blood { background-color: var(--nezuko-blood); }
+.character-container.kokushibo-moon { background-color: var(--kokushibo-moon); }
+.character-container.doma-ice { background-color: var(--doma-ice); }
+.character-container.akaza-shock { background-color: var(--akaza-shock); }
+.character-container.hantengu-emotion { background-color: var(--hantengu-emotion); }
+.character-container.gyokko-water { background-color: var(--gyokko-water); }
+.character-container.daki-sash { background-color: var(--daki-sash); }
+.character-container.gyutaro-sickle { background-color: var(--gyutaro-sickle); }
+.character-container.kaigaku-electro { background-color: var(--kaigaku-electro); }
+.character-container.rui-thread { background-color: var(--rui-thread); }
+.character-container.enmu-dream { background-color: var(--enmu-dream); }
+.character-container.kyogai-drum { background-color: var(--kyogai-drum); }
+.character-container.tamayo-bewitch { background-color: var(--tamayo-bewitch); }
+.character-container.yushiro-blindfold { background-color: var(--yushiro-blindfold); }
+.character-container.susamaru-temari { background-color: var(--susamaru-temari); }
+.character-container.yahaba-arrow { background-color: var(--yahaba-arrow); }
 
 .badge {
   background-color: #ffd700;

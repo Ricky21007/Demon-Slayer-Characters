@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Demons</title>
+  <title>Demon Slayers</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="sidebar" id="sidebar">
       <button id="sidebar-close" aria-label="Close sidebar">×</button>
       <ul>
-        <li><a href="index.html" data-section="welcome">Back to Welcome Page</a></li>
+        <li><a href="index.html" data-section="welcome">Home</a></li>
         <li><a href="slayers.html" data-section="demon-slayers">Demon Slayers</a></li>
         <li><a href="demons.html" data-section="demons">Demons</a></li>
         <li><a href="hashira.html" data-section="hashira">Hashira</a></li>
@@ -25,413 +25,268 @@
     </nav>
     <main>
       <section id="character-list">
-        <div class="category" id="demons">
-          <h2>Demons</h2>
-          <!-- Character grid set to display cards horizontally via CSS -->
+        <div class="category" id="demon-slayers">
+          <h2>Demon Slayers</h2>
           <div class="character-grid">
-            <!-- Muzan Kibutsuji -->
-            <div class="character-card muzan-blood" data-name="Muzan Kibutsuji" data-section="demons">
-              <button class="favorite-btn" data-name="Muzan Kibutsuji" aria-label="Add Muzan Kibutsuji to favorites">❤️</button>
-              <img src="Images/Demons/Muzan_Kibutsuji_Full_Body.webp" alt="Muzan Kibutsuji Normal Form" loading="lazy" class="character-img" />
+            <!-- Tanjiro Kamado -->
+            <div class="character-container sun-breathing" data-name="Tanjiro Kamado" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Tanjiro Kamado card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Tanjiro Kamado">❤️</button>
+              <img src="Images/Slayers/Tanjiro_Kamado.webp" alt="Tanjiro Kamado" loading="lazy" />
               <div class="character-details">
-                <h3>Muzan Kibutsuji</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>The first demon, driven to achieve immortality and invincibility.</p>
-                <h4>Family</h4>
-                <p>Adopts human disguises, has a faux family (wife and daughter).</p>
-                <h4>Rank</h4>
-                <p>King of Demons, leader of all demonic forces.</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, regeneration, shape-shifting, and speed.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Black Blood: Brambles, lethal whip-like attacks, biological manipulation.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Human-like appearance for disguise.<br>Combat Form: Enhanced limbs, whip-like appendages.<br>Final Form: Grotesque, massive body with mouths and tentacles.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Muzan_Kibutsuji_Full_Body.webp" alt="Muzan Normal Form">
-                <img src="Images/Demons/Muzan_comabat-form.webp" alt="Muzan Combat Form">
-                <img src="Images/Demons/Muzan_final-form.webp" alt="Muzan Final Form">
+                <h3>Tanjiro Kamado</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>A kind-hearted boy who joined the Demon Slayer Corps to save his sister Nezuko.</p>
+                <p><strong>Family:</strong> Father: Tanjuro Kamado; Mother: Kie Kamado; Sister: Nezuko Kamado; Siblings: Takeo, Hanako, Shigeru, Rokuta (deceased).</p>
+                <p><strong>Physical Abilities:</strong> Enhanced strength, smell, endurance, and hard forehead.</p>
+                <p><strong>Breathing Style:</strong> Water Breathing, Sun Breathing</p>
+                <p><strong>Forms:</strong> Water Surface Slash, Water Wheel, Flowing Dance, Striking Tide, Blessed Rain After the Drought, Whirlpool, Drop Ripple Thrust, Waterfall Basin, Splashing Water Flow, Constant Flux, Dance, Clear Blue Sky, Raging Sun, Burning Bones, Summer Sun, Setting Sun Transformation, Solar Heat Haze, Beneficent Radiance, Sunflower Thrust, Dragon Sun Halo Head Dance, Fire Wheel, Fake Rainbow, Flame Dance, Thirteenth Form</p>
               </div>
             </div>
-            <!-- Nezuko Kamado -->
-            <div class="character-card nezuko-blood" data-name="Nezuko Kamado" data-section="demons">
-              <button class="favorite-btn" data-name="Nezuko Kamado" aria-label="Add Nezuko Kamado to favorites">❤️</button>
-              <img src="Images/Demons/Nezuko_normal-form.webp" alt="Nezuko Kamado Normal Form" loading="lazy" class="character-img" />
+            <!-- Zenitsu Agatsuma -->
+            <div class="character-container thunder-breathing" data-name="Zenitsu Agatsuma" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Zenitsu Agatsuma card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Zenitsu Agatsuma">❤️</button>
+              <img src="Images/Slayers/Zenitsu.webp" alt="Zenitsu Agatsuma" loading="lazy" />
               <div class="character-details">
-                <h3>Nezuko Kamado</h3>
-                <h4>Background</h4>
-                <p>Tanjiro's sister, turned demon by Muzan, retains humanity.</p>
-                <h4>Family</h4>
-                <p>Father: Tanjuro Kamado<br>Mother: Kie Kamado<br>Brother: Tanjiro Kamado<br>Siblings: Takeo, Hanako, Shigeru, Rokuta</p>
-                <h4>Rank</h4>
-                <p>Unique demon, not aligned with Muzan's hierarchy.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, rapid regeneration, size manipulation.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Exploding Blood: Ignites her blood to burn demons.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Small, gentle appearance with bamboo muzzle.<br>Advanced Form: Grows horns, increases power, reverts to human-like state.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Nezuko_normal-form.webp" alt="Nezuko Normal Form">
-                <img src="Images/Demons/Nezuko_Advanced_Form.webp" alt="Nezuko Advanced Form">
+                <h3>Zenitsu Agatsuma</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>A cowardly but talented Demon Slayer who fights effectively when unconscious.</p>
+                <p><strong>Family:</strong> Orphaned; no known family.</p>
+                <p><strong>Physical Abilities:</strong> Exceptional speed and hearing.</p>
+                <p><strong>Breathing Style:</strong> Thunder Breathing</p>
+                <p><strong>Forms:</strong> Thunderclap and Flash, Sixfold, Eightfold, Godspeed</p>
               </div>
             </div>
-            <!-- Kokushibo -->
-            <div class="character-card kokushibo-moon" data-name="Kokushibo" data-section="demons">
-              <button class="favorite-btn" data-name="Kokushibo" aria-label="Add Kokushibo to favorites">❤️</button>
-              <img src="Images/Demons/Kokushibo_normal-form.webp" alt="Kokushibo Normal Form" loading="lazy" class="character-img" />
+            <!-- Inosuke Hashibira -->
+            <div class="character-container beast-breathing" data-name="Inosuke Hashibira" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Inosuke Hashibira card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Inosuke Hashibira">❤️</button>
+              <img src="Images/Slayers/Inosuke.webp" alt="Inosuke Hashibira" loading="lazy" />
               <div class="character-details">
-                <h3>Kokushibo</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>Former Demon Slayer Michikatsu Tsugikuni, turned demon out of envy.</p>
-                <h4>Family</h4>
-                <p>Brother: Yoriichi Tsugikuni; family from human life deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank One of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, speed, and swordsmanship.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Crescent Moon Blades: Chaotic, crescent-shaped blade attacks.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Six-eyed, samurai-like appearance.<br>Enhanced Form: Monstrous, blade-covered body with increased power.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Kokushibo-normal-form.webp" alt="Kokushibo Normal Form">
-                <img src="Images/Demons/Kokushibo_monstrous_final_form.webp" alt="Kokushibo Enhanced Form">
+                <h3>Inosuke Hashibira</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>A brash, boar-masked Demon Slayer raised by wild boars.</p>
+                <p><strong>Family:</strong> Mother: Kotoha Hashibira (deceased); no known father.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced strength, flexibility, and touch.</p>
+                <p><strong>Breathing Style:</strong> Beast Breathing</p>
+                <p><strong>Forms:</strong> Pierce, Slice, Devour, Slice 'n' Dice, Crazy Cutting, Palisade Bite, Spatial Awareness, Explosive Rush, Extending Bendy Slash, Whirling Fangs</p>
               </div>
             </div>
-            <!-- Doma -->
-            <div class="character-card doma-ice" data-name="Doma" data-section="demons">
-              <button class="favorite-btn" data-name="Doma" aria-label="Add Doma to favorites">❤️</button>
-              <img src="Images/Demons/Doma.webp" alt="Doma" loading="lazy" class="character-img" />
+            <!-- Kanao Tsuyuri -->
+            <div class="character-container flower-breathing" data-name="Kanao Tsuyuri" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Kanao Tsuyuri card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Kanao Tsuyuri">❤️</button>
+              <img src="Images/Slayers/Kanao.webp" alt="Kanao Tsuyuri" loading="lazy" />
               <div class="character-details">
-                <h3>Doma</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A nihilistic demon, born with rainbow eyes, led a cult as a human.</p>
-                <h4>Family</h4>
-                <p>Parents saw him as divine, started a cult around him.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Two of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>High strength, speed, and regeneration.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Frozen Lotus: Cryokinetic attacks, ice clones, and frost mists.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Doma.webp" alt="Doma">
+                <h3>Kanao Tsuyuri</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>A quiet Demon Slayer adopted by the Kocho sisters, uses a coin to make decisions.</p>
+                <p><strong>Family:</strong> Adoptive sisters: Shinobu Kocho, Kanae Kocho (deceased); biological family unknown.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced agility, vision, and precision.</p>
+                <p><strong>Breathing Style:</strong> Flower Breathing</p>
+                <p><strong>Forms:</strong> Honorable Shadow Plum, Crimson Hanagoromo, Peonies of Futility, Whirling Peach, Equinoctial Vermilion Eye</p>
               </div>
             </div>
-            <!-- Akaza -->
-            <div class="character-card akaza-shock" data-name="Akaza" data-section="demons">
-              <button class="favorite-btn" data-name="Akaza" aria-label="Add Akaza to favorites">❤️</button>
-              <img src="Images/Demons/Akaza.webp" alt="Akaza" loading="lazy" class="character-img" />
+            <!-- Genya Shinazugawa -->
+            <div class="character-container no-breathing" data-name="Genya Shinazugawa" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Genya Shinazugawa card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Genya Shinazugawa">❤️</button>
+              <img src="Images/Slayers/Genya.webp" alt="Genya Shinazugawa" loading="lazy" />
               <div class="character-details">
-                <h3>Akaza</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A martial artist turned demon, seeks strong opponents.</p>
-                <h4>Family</h4>
-                <p>Father, fiancée Koyuki, and her father killed in human life.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Three of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Exceptional strength, speed, and martial arts skill.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Destructive Death: Shockwave-based attacks, combat sense.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Akaza.webp" alt="Akaza">
+                <h3>Genya Shinazugawa</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>A rough Demon Slayer who uses a gun and consumes demons to gain power.</p>
+                <p><strong>Family:</strong> Brother: Sanemi Shinazugawa; mother and siblings deceased.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced strength and demonic transformation via consumption.</p>
+                <p><strong>Breathing Style:</strong> None (uses demonic abilities and firearms)</p>
+                <p><strong>Forms:</strong> Temporary demonic transformation after consuming demon flesh.</p>
               </div>
             </div>
-            <!-- Hantengu -->
-            <div class="character-card hantengu-emotion" data-name="Hantengu" data-section="demons">
-              <button class="favorite-btn" data-name="Hantengu" aria-label="Add Hantengu to favorites">❤️</button>
-              <img src="Images/Demons/Hantengu_Full_Body_Anime.webp" alt="Hantengu Normal Form" loading="lazy" class="character-img" />
+            <!-- Yoriichi Tsugikuni -->
+            <div class="character-container sun-breathing" data-name="Yoriichi Tsugikuni" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Yoriichi Tsugikuni card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Yoriichi Tsugikuni">❤️</button>
+              <img src="Images/Slayers/Yoriichi.webp" alt="Yoriichi Tsugikuni" loading="lazy" />
               <div class="character-details">
-                <h3>Hantengu</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A cowardly demon who splits into emotion-based clones.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Four of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, splitting into multiple bodies.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Emotion Manifestation: Creates clones of anger, pleasure, sorrow, joy, resentment.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Small, frail appearance.<br>Clones: Sekido (anger), Karaku (pleasure), Aizetsu (sorrow), Urogi (joy), Urami (resesentment).<br>Zohakuten: Merged, powerful dragon form.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Hantengu_Full_Body_Anime.webp" alt="Hantengu Normal Form">
-                <img src="Images/Demons/Sekido.webp" alt="Hantengu Sekido Clone">
-                <img src="Images/Demons/Karaku.webp" alt="Hantengu Karaku Clone">
-                <img src="Images/Demons/Aizetsu.webp" alt="Hantengu Aizetsu Clone">
-                <img src="Images/Demons/Urogi.webp" alt="Hantengu Urogi Clone">
-                <img src="Images/Demons/Urami.webp" alt="Hantengu Urami Clone">
-                <img src="Images/Demons/Zohakuten.webp" alt="Hantengu Zohakuten Form">
+                <h3>Yoriichi Tsugikuni</h3>
+                <span class="subtitle">Demon Slayer</span>
+                <p>The most powerful Demon Slayer, creator of Sun Breathing.</p>
+                <p><strong>Family:</strong> Brother: Michikatsu Tsugikuni (Kokushibo); wife and child killed by demons.</p>
+                <p><strong>Physical Abilities:</strong> Unmatched strength, speed, and perception (Demon Slayer Mark).</p>
+                <p><strong>Breathing Style:</strong> Sun Breathing</p>
+                <p><strong>Forms:</strong> Dance, Clear Blue Sky, Raging Sun, Burning Bones, Summer Sun, Setting Sun Transformation, Solar Heat Haze, Beneficent Radiance, Sunflower Thrust, Dragon Sun Halo Head Dance, Fire Wheel, Fake Rainbow, Flame Dance, Thirteenth Form</p>
               </div>
             </div>
-            <!-- Gyokko -->
-            <div class="character-card gyokko-water" data-name="Gyokko" data-section="demons">
-              <button class="favorite-btn" data-name="Gyokko" aria-label="Add Gyokko to favorites">❤️</button>
-              <img src="Images/Demons/Gyokko.webp" alt="Gyokko Normal Form" loading="lazy" class="character-img" />
+            <!-- Sakonji Urokodaki -->
+            <div class="character-container water-breathing" data-name="Sakonji Urokodaki" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Sakonji Urokodaki card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Sakonji Urokodaki">❤️</button>
+              <img src="Images/Slayers/Sakonji.webp" alt="Sakonji Urokodaki" loading="lazy" />
               <div class="character-details">
-                <h3>Gyokko</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A grotesque, art-obsessed demon with a love for pots.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Five of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, flexibility, and aquatic movement.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Porcelain Vases: Summons water-based attacks, fish demons from pots.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Pot-bound, scaly appearance.<br>True Form: Serpentine, scaled body with enhanced power.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Gyokko.webp" alt="Gyokko Normal Form">
-                <img src="Images/Demons/Gyokko_final-form.webp" alt="Gyokko True Form">
+                <h3>Sakonji Urokodaki</h3>
+                <span class="subtitle">Former Water Hashira</span>
+                <p>A retired Demon Slayer and trainer of Tanjiro and Giyu.</p>
+                <p><strong>Family:</strong> Family details unknown.</p>
+                <p><strong>Physical Abilities:</strong> Skilled swordsmanship, enhanced senses.</p>
+                <p><strong>Breathing Style:</strong> Water Breathing</p>
+                <p><strong>Forms:</strong> Water Surface Slash, Water Wheel, Flowing Dance, Striking Tide, Blessed Rain After the Drought, Whirlpool, Drop Ripple Thrust, Waterfall Basin, Splashing Water Flow, Constant Flux</p>
               </div>
             </div>
-            <!-- Daki -->
-            <div class="character-card daki-sash" data-name="Daki" data-section="demons">
-              <button class="favorite-btn" data-name="Daki" aria-label="Add Daki to favorites">❤️</button>
-              <img src="Images/Demons/Daki.webp" alt="Daki Normal Form" loading="lazy" class="character-img" />
+            <!-- Jigoro Kuwajima -->
+            <div class="character-container thunder-breathing" data-name="Jigoro Kuwajima" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Jigoro Kuwajima card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Jigoro Kuwajima">❤️</button>
+              <img src="Images/Slayers/Jigoro.webp" alt="Jigoro Kuwajima" loading="lazy" />
               <div class="character-details">
-                <h3>Daki</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A cruel demon, works with brother Gyutaro in the Entertainment District.</p>
-                <h4>Family</h4>
-                <p>Brother: Gyutaro; human family deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (shared with Gyutaro).</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, speed, and regeneration.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Obi Sash: Manipulates sashes for binding and slashing.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Beautiful, courtesan-like appearance.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Daki.webp" alt="Daki Normal Form">
+                <h3>Jigoro Kuwajima</h3>
+                <span class="subtitle">Former Thunder Hashira</span>
+                <p>A former Thunder Hashira who trained Zenitsu and Kaigaku.</p>
+                <p><strong>Family:</strong> Family details unknown.</p>
+                <p><strong>Physical Abilities:</strong> High speed and swordsmanship skill.</p>
+                <p><strong>Breathing Style:</strong> Thunder Breathing</p>
+                <p><strong>Forms:</strong> Thunderclap and Flash, Rice Spirit, Thunderwave, Distant Thunder, Heat Lightning, Rumble and Flash</p>
               </div>
             </div>
-            <!-- Gyutaro -->
-            <div class="character-card gyutaro-sickle" data-name="Gyutaro" data-section="demons">
-              <button class="favorite-btn" data-name="Gyutaro" aria-label="Add Gyutaro to favorites">❤️</button>
-              <img src="Images/Demons/Gyutaro.webp" alt="Gyutaro Normal Form" loading="lazy" class="character-img" />
+            <!-- Giyu Tomioka -->
+            <div class="character-container water-breathing" data-name="Giyu Tomioka" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Giyu Tomioka card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Giyu Tomioka">❤️</button>
+              <img src="Images/Slayers/Giyu.webp" alt="Giyu Tomioka" loading="lazy" />
               <div class="character-details">
-                <h3>Gyutaro</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>Daki's protective brother, a vicious demon from the Entertainment District.</p>
-                <h4>Family</h4>
-                <p>Sister: Daki; human family deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (shared with Daki).</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, speed, and poison-based attacks.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Blood Sickle: Creates flying, poisonous blood sickles.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Gaunt, scarred appearance emerging from Daki.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Gyutaro.webp" alt="Gyutaro Normal Form">
+                <h3>Giyu Tomioka</h3>
+                <span class="subtitle">Water Hashira</span>
+                <p>A stoic and skilled Demon Slayer who spared Nezuko, believing in Tanjiro's cause.</p>
+                <p><strong>Family:</strong> Sister: Tsutako Tomioka; parents unknown.</p>
+                <p><strong>Physical Abilities:</strong> Superior strength, speed, and precision.</p>
+                <p><strong>Breathing Style:</strong> Water Breathing</p>
+                <p><strong>Forms:</strong> Water Surface Slash, Water Wheel, Flowing Dance, Striking Tide, Blessed Rain After the Drought, Whirlpool, Drop Ripple Thrust, Waterfall Basin, Splashing Water Flow, Turbulent, Constant Flux, Dead Calm</p>
               </div>
             </div>
-            <!-- Kaigaku -->
-            <div class="character-card kaigaku-electro" data-name="Kaigaku" data-section="demons">
-              <button class="favorite-btn" data-name="Kaigaku" aria-label="Add Kaigaku to favorites">❤️</button>
-              <img src="Images/Demons/Kaigaku.webp" alt="Kaigaku Normal Form" loading="lazy" class="character-img" />
+            <!-- Kyojuro Rengoku -->
+            <div class="character-container flame-breathing" data-name="Kyojuro Rengoku" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Kyojuro Rengoku card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Kyojuro Rengoku">❤️</button>
+              <img src="Images/Slayers/Kyojuro.webp" alt="Kyojuro Rengoku" loading="lazy" />
               <div class="character-details">
-                <h3>Kaigaku</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
-                <p>A traitorous Demon Slayer turned demon, betrayed Jigoro.</p>
-                <h4>Family</h4>
-                <p>Human family unknown; orphaned.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (replacement).</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced speed, strength, and swordsmanship.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Electrokinetic enhancement of Thunder Breathing techniques.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Demonized appearance with black markings.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Kaigaku.webp" alt="Kaigaku Normal Form">
+                <h3>Kyojuro Rengoku</h3>
+                <span class="subtitle">Flame Hashira</span>
+                <p>A passionate and honorable Demon Slayer, dedicated to protecting others.</p>
+                <p><strong>Family:</strong> Father: Shinjuro Rengoku; Mother: Ruka Rengoku; Brother: Senjuro Rengoku</p>
+                <p><strong>Physical Abilities:</strong> Exceptional strength, endurance, and speed.</p>
+                <p><strong>Breathing Style:</strong> Flame Breathing</p>
+                <p><strong>Forms:</strong> Unknowing Fire, Rising Scorching Sun, Blazing Universe, Blooming Flame Undulation, Flame Tiger, Rengoku</p>
               </div>
             </div>
-            <!-- Rui -->
-            <div class="character-card rui-thread" data-name="Rui" data-section="demons">
-              <button class="favorite-btn" data-name="Rui" aria-label="Add Rui to favorites">❤️</button>
-              <img src="Images/Demons/Rui.webp" alt="Rui" loading="lazy" class="character-img" />
+            <!-- Tengen Uzui -->
+            <div class="character-container sound-breathing" data-name="Tengen Uzui" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Tengen Uzui card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Tengen Uzui">❤️</button>
+              <img src="Images/Slayers/Tengen.webp" alt="Tengen Uzui" loading="lazy" />
               <div class="character-details">
-                <h3>Rui</h3>
-                <h4>Background</h4>
-                <p>A child-like demon seeking a family, leader of the Spider Family.</p>
-                <h4>Family</h4>
-                <p>Human parents killed; created faux Spider Family.</p>
-                <h4>Rank</h4>
-                <p>Lower Rank Five of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, regeneration, and thread manipulation.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Cutting Thread: Strong, sharp threads for attack and defense.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Rui.webp" alt="Rui">
+                <h3>Tengen Uzui</h3>
+                <span class="subtitle">Sound Hashira</span>
+                <p>A flamboyant former ninja turned Demon Slayer, known for his flashy style.</p>
+                <p><strong>Family:</strong> Wives: Makio, Suma, Hinatsuru; siblings largely killed in ninja clan.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced speed, strength, and hearing from ninja training.</p>
+                <p><strong>Breathing Style:</strong> Sound Breathing</p>
+                <p><strong>Forms:</strong> Roar, Constant Resounding Slashes, String Performance</p>
               </div>
             </div>
-            <!-- Enmu -->
-            <div class="character-card enmu-dream" data-name="Enmu" data-section="demons">
-              <button class="favorite-btn" data-name="Enmu" aria-label="Add Enmu to favorites">❤️</button>
-              <img src="Images/Demons/Enmu.webp" alt="Enmu" loading="lazy" class="character-img" />
+            <!-- Mitsuri Kanroji -->
+            <div class="character-container love-breathing" data-name="Mitsuri Kanroji" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Mitsuri Kanroji card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Mitsuri Kanroji">❤️</button>
+              <img src="Images/Slayers/Mitsuri.webp" alt="Mitsuri Kanroji" loading="lazy" />
               <div class="character-details">
-                <h3>Enmu</h3>
-                <h4>Background</h4>
-                <p>A sadistic demon obsessed with dreams and sleep.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Lower Rank One of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, fusion with objects (e.g., train).</p>
-                <h4>Blood Demon Art</h4>
-                <p>Dream Manipulation: Induces sleep, controls dreams.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Enmu.webp" alt="Enmu">
+                <h3>Mitsuri Kanroji</h3>
+                <span class="subtitle">Love Hashira</span>
+                <p>A cheerful and strong Demon Slayer driven by love and protecting others.</p>
+                <p><strong>Family:</strong> Parents and siblings alive, details unspecified.</p>
+                <p><strong>Physical Abilities:</strong> Superhuman strength (eight times normal), flexibility, and agility.</p>
+                <p><strong>Breathing Style:</strong> Love Breathing</p>
+                <p><strong>Forms:</strong> Shivers of First Love, Love Pangs, Catlove Shower, Swaying Love, Wildclaw, Cat-Legged Winds of Love</p>
               </div>
             </div>
-            <!-- Kyogai -->
-            <div class="character-card kyogai-drum" data-name="Kyogai" data-section="demons">
-              <button class="favorite-btn" data-name="Kyogai" aria-label="Add Kyogai to favorites">❤️</button>
-              <img src="Images/Demons/Kyogai.webp" alt="Kyogai" loading="lazy" class="character-img" />
+            <!-- Muichiro Tokito -->
+            <div class="character-container mist-breathing" data-name="Muichiro Tokito" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Muichiro Tokito card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Muichiro Tokito">❤️</button>
+              <img src="Images/Slayers/Muichiro.webp" alt="Muichiro Tokito" loading="lazy" />
               <div class="character-details">
-                <h3>Kyogai</h3>
-                <h4>Background</h4>
-                <p>A former Lower Rank, drum-obsessed demon, cast out by Muzan.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Former Lower Rank Six of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, drum-based spatial control.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Drum Manipulation: Shifts rooms, attacks with drumbeats.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Kyogai.webp" alt="Kyogai">
+                <h3>Muichiro Tokito</h3>
+                <span class="subtitle">Mist Hashira</span>
+                <p>A young, aloof genius Demon Slayer with a tragic past.</p>
+                <p><strong>Family:</strong> Twin Brother: Yuichiro Tokito; parents deceased.</p>
+                <p><strong>Physical Abilities:</strong> Exceptional speed, reflexes, and swordsmanship.</p>
+                <p><strong>Breathing Style:</strong> Mist Breathing</p>
+                <p><strong>Forms:</strong> Low Clouds, Distant Haze, Eight-Layered Mist, Scattering Mist Splash, Shifting Flow Slash, Sea of Clouds and Haze, Lunar Dispersing Mist, Obscuring Clouds</p>
               </div>
             </div>
-            <!-- Tamayo -->
-            <div class="character-card tamayo-bewitch" data-name="Tamayo" data-section="demons">
-              <button class="favorite-btn" data-name="Tamayo" aria-label="Add Tamayo to favorites">❤️</button>
-              <img src="Images/Demons/Tamayo.webp" alt="Tamayo" loading="lazy" class="character-img" />
+            <!-- Shinobu Kocho -->
+            <div class="character-container insect-breathing" data-name="Shinobu Kocho" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Shinobu Kocho card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Shinobu Kocho">❤️</button>
+              <img src="Images/Slayers/Shinobu.webp" alt="Shinobu Kocho" loading="lazy" />
               <div class="character-details">
-                <h3>Tamayo</h3>
-                <h4>Background</h4>
-                <p>A kind demon doctor, seeks to defeat Muzan, aids Tanjiro.</p>
-                <h4>Family</h4>
-                <p>Human family killed; companion: Yushiro.</p>
-                <h4>Rank</h4>
-                <p>Independent demon, unaffiliated with Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, high intellect, medical expertise.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Blood Bewitchment: Illusionary and chemical blood effects.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Tamayo.webp" alt="Tamayo">
+                <h3>Shinobu Kocho</h3>
+                <span class="subtitle">Insect Hashira</span>
+                <p>A gentle yet vengeful Demon Slayer using poison to kill demons.</p>
+                <p><strong>Family:</strong> Sister: Kanae Kocho; parents killed by demons.</p>
+                <p><strong>Physical Abilities:</strong> High agility and precision, lacks strength for decapitation.</p>
+                <p><strong>Breathing Style:</strong> Insect Breathing</p>
+                <p><strong>Forms:</strong> Butterfly Dance: Caprice, Dance of the Bee Sting: True Flutter, Dance of the Dragonfly: Compound Eye Hexagon, Dance of the Centipede: Hundred-Legged Zigzag</p>
               </div>
             </div>
-            <!-- Yushiro -->
-            <div class="character-card yushiro-blindfold" data-name="Yushiro" data-section="demons">
-              <button class="favorite-btn" data-name="Yushiro" aria-label="Add Yushiro to favorites">❤️</button>
-              <img src="Images/Demons/Yushiro.webp" alt="Yushiro" loading="lazy" class="character-img" />
+            <!-- Obanai Iguro -->
+            <div class="character-container serpent-breathing" data-name="Obanai Iguro" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Obanai Iguro card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Obanai Iguro">❤️</button>
+              <img src="Images/Slayers/Obanai.webp" alt="Obanai Iguro" loading="lazy" />
               <div class="character-details">
-                <h3>Yushiro</h3>
-                <h4>Background</h4>
-                <p>Tamayo's loyal companion, turned demon to survive illness.</p>
-                <h4>Family</h4>
-                <p>Human family deceased; companion: Tamayo.</p>
-                <h4>Rank</h4>
-                <p>Independent demon, unaffiliated with Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, speed, and regeneration.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Blindfold: Invisibility and perception-based techniques.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Yushiro.webp" alt="Yushiro">
+                <h3>Obanai Iguro</h3>
+                <span class="subtitle">Serpent Hashira</span>
+                <p>A strict, snake-loving Demon Slayer with a harsh upbringing.</p>
+                <p><strong>Family:</strong> Family killed by a snake demon; raised by abusive relatives.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced agility, flexibility, and swordsmanship.</p>
+                <p><strong>Breathing Style:</strong> Serpent Breathing</p>
+                <p><strong>Forms:</strong> Winding Serpent Slash, Venom Fangs of the Narrow Head, Coil Choke, Twin-Headed Reptile, Slithering Serpent</p>
               </div>
             </div>
-            <!-- Susamaru -->
-            <div class="character-card susamaru-temari" data-name="Susamaru" data-section="demons">
-              <button class="favorite-btn" data-name="Susamaru" aria-label="Add Susamaru to favorites">❤️</button>
-              <img src="Images/Demons/Susamaru.webp" alt="Susamaru" loading="lazy" class="character-img" />
+            <!-- Sanemi Shinazugawa -->
+            <div class="character-container wind-breathing" data-name="Sanemi Shinazugawa" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Sanemi Shinazugawa card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Sanemi Shinazugawa">❤️</button>
+              <img src="Images/Slayers/Sanemi.webp" alt="Sanemi Shinazugawa" loading="lazy" />
               <div class="character-details">
-                <h3>Susamaru</h3>
-                <h4>Background</h4>
-                <p>A playful demon working with Yahaba, loyal to Muzan.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>No official rank, subordinate to Muzan.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, regeneration, ball-throwing skill.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Hiasobi Temari: Manipulates powerful, destructive temari balls.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Susamaru.webp" alt="Susamaru">
+                <h3>Sanemi Shinazugawa</h3>
+                <span class="subtitle">Wind Hashira</span>
+                <p>A fierce, scarred Demon Slayer with a hatred for demons.</p>
+                <p><strong>Family:</strong> Brother: Genya Shinazugawa; mother turned demon, killed family.</p>
+                <p><strong>Physical Abilities:</strong> Immense strength, speed, and endurance.</p>
+                <p><strong>Breathing Style:</strong> Wind Breathing</p>
+                <p><strong>Forms:</strong> Dust Whirlwind Cutter, Claws-Purifying Wind, Clean Storm Wind Tree, Rising Dust Storm, Cold Mountain Wind, Black Wind Mountain Mist, Gale, Sudden Gusts, Primary Gale Slash, Idaten Typhoon</p>
               </div>
             </div>
-            <!-- Yahaba -->
-            <div class="character-card yahaba-arrow" data-name="Yahaba" data-section="demons">
-              <button class="favorite-btn" data-name="Yahaba" aria-label="Add Yahaba to favorites">❤️</button>
-              <img src="Images/Demons/Yahaba.webp" alt="Yahaba" loading="lazy" class="character-img" />
+            <!-- Gyomei Himejima -->
+            <div class="character-container stone-breathing" data-name="Gyomei Himejima" data-section="demon-slayers">
+              <button class="close-btn" aria-label="Close Gyomei Himejima card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Gyomei Himejima">❤️</button>
+              <img src="Images/Slayers/Gyomei.webp" alt="Gyomei Himejima" loading="lazy" />
               <div class="character-details">
-                <h3>Yahaba</h3>
-                <h4>Background</h4>
-                <p>A serious demon, partners with Susamaru to hunt Tanjiro.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>No official rank, subordinate to Muzan.</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, regeneration, and precision.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Kokketsu Arrow: Eye-based vector manipulation attacks.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Yahaba.webp" alt="Yahaba">
+                <h3>Gyomei Himejima</h3>
+                <span class="subtitle">Stone Hashira</span>
+                <p>A blind, gentle giant and the strongest Demon Slayer.</p>
+                <p><strong>Family:</strong> Orphaned; raised children before they were killed by a demon.</p>
+                <p><strong>Physical Abilities:</strong> Unmatched strength, heightened senses despite blindness.</p>
+                <p><strong>Breathing Style:</strong> Stone Breathing</p>
+                <p><strong>Forms:</strong> Serpentinite Bipolar, Upper Smash, Stone Skin, Volcanic Rock, Rapid Conquest, Arcs of Justice</p>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- Modal for enlarged image -->
-    <div id="image-modal" class="modal">
-      <span id="modal-close" class="modal-close" aria-label="Close modal">×</span>
-      <img class="modal-content" id="modal-image" alt="Enlarged Character Image" />
-    </div>
     <script src="script.js"></script>
   </div>
 </body>

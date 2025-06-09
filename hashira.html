@@ -4,59 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hashira</title>
-  <style>
-    .character-container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      margin: 10px 0;
-      border: 2px solid #f4a261;
-      border-radius: 10px;
-      background: #fff;
-      width: 300px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .character-container img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-    .character-details {
-      flex-grow: 1;
-    }
-    .character-container h3 {
-      margin: 0;
-      font-size: 1.2em;
-      color: #2c2c2c;
-    }
-    .character-container .subtitle {
-      color: #666;
-      font-size: 0.9em;
-    }
-    .character-container .close-btn {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      border: none;
-      background: none;
-      font-size: 1.2em;
-      cursor: pointer;
-      color: #f4a261;
-    }
-    .character-grid {
-      display: block; /* Changed from flex to block for vertical stacking */
-      padding: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div id="main-content">
     <header>
       <button id="burger-btn" aria-label="Toggle sidebar">☰</button>
-      <img src="Images/logo.png" alt="Header Image" id="logo-img"/>
       <input type="text" id="search-bar" placeholder="Search characters..." aria-label="Search characters" />
     </header>
     <nav class="sidebar" id="sidebar">
@@ -76,8 +29,9 @@
           <h2>Hashira</h2>
           <div class="character-grid">
             <!-- Giyu Tomioka -->
-            <div class="character-container" data-name="Giyu Tomioka" data-section="hashira">
+            <div class="character-container water-breathing" data-name="Giyu Tomioka" data-section="hashira">
               <button class="close-btn" aria-label="Close Giyu Tomioka card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Giyu Tomioka">❤️</button>
               <img src="Images/Slayers/Giyu.webp" alt="Giyu Tomioka" loading="lazy" />
               <div class="character-details">
                 <h3>Giyu Tomioka</h3>
@@ -90,8 +44,9 @@
               </div>
             </div>
             <!-- Kyojuro Rengoku -->
-            <div class="character-container" data-name="Kyojuro Rengoku" data-section="hashira">
+            <div class="character-container flame-breathing" data-name="Kyojuro Rengoku" data-section="hashira">
               <button class="close-btn" aria-label="Close Kyojuro Rengoku card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Kyojuro Rengoku">❤️</button>
               <img src="Images/Slayers/Kyojuro.webp" alt="Kyojuro Rengoku" loading="lazy" />
               <div class="character-details">
                 <h3>Kyojuro Rengoku</h3>
@@ -104,8 +59,9 @@
               </div>
             </div>
             <!-- Tengen Uzui -->
-            <div class="character-container" data-name="Tengen Uzui" data-section="hashira">
+            <div class="character-container sound-breathing" data-name="Tengen Uzui" data-section="hashira">
               <button class="close-btn" aria-label="Close Tengen Uzui card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Tengen Uzui">❤️</button>
               <img src="Images/Slayers/Tengen.webp" alt="Tengen Uzui" loading="lazy" />
               <div class="character-details">
                 <h3>Tengen Uzui</h3>
@@ -118,8 +74,9 @@
               </div>
             </div>
             <!-- Mitsuri Kanroji -->
-            <div class="character-container" data-name="Mitsuri Kanroji" data-section="hashira">
+            <div class="character-container love-breathing" data-name="Mitsuri Kanroji" data-section="hashira">
               <button class="close-btn" aria-label="Close Mitsuri Kanroji card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Mitsuri Kanroji">❤️</button>
               <img src="Images/Slayers/Mitsuri.webp" alt="Mitsuri Kanroji" loading="lazy" />
               <div class="character-details">
                 <h3>Mitsuri Kanroji</h3>
@@ -132,8 +89,9 @@
               </div>
             </div>
             <!-- Muichiro Tokito -->
-            <div class="character-container" data-name="Muichiro Tokito" data-section="hashira">
+            <div class="character-container mist-breathing" data-name="Muichiro Tokito" data-section="hashira">
               <button class="close-btn" aria-label="Close Muichiro Tokito card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Muichiro Tokito">❤️</button>
               <img src="Images/Slayers/Muichiro.webp" alt="Muichiro Tokito" loading="lazy" />
               <div class="character-details">
                 <h3>Muichiro Tokito</h3>
@@ -146,8 +104,9 @@
               </div>
             </div>
             <!-- Shinobu Kocho -->
-            <div class="character-container" data-name="Shinobu Kocho" data-section="hashira">
+            <div class="character-container insect-breathing" data-name="Shinobu Kocho" data-section="hashira">
               <button class="close-btn" aria-label="Close Shinobu Kocho card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Shinobu Kocho">❤️</button>
               <img src="Images/Slayers/Shinobu.webp" alt="Shinobu Kocho" loading="lazy" />
               <div class="character-details">
                 <h3>Shinobu Kocho</h3>
@@ -160,8 +119,9 @@
               </div>
             </div>
             <!-- Obanai Iguro -->
-            <div class="character-container" data-name="Obanai Iguro" data-section="hashira">
+            <div class="character-container serpent-breathing" data-name="Obanai Iguro" data-section="hashira">
               <button class="close-btn" aria-label="Close Obanai Iguro card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Obanai Iguro">❤️</button>
               <img src="Images/Slayers/Obanai.webp" alt="Obanai Iguro" loading="lazy" />
               <div class="character-details">
                 <h3>Obanai Iguro</h3>
@@ -174,8 +134,9 @@
               </div>
             </div>
             <!-- Sanemi Shinazugawa -->
-            <div class="character-container" data-name="Sanemi Shinazugawa" data-section="hashira">
+            <div class="character-container wind-breathing" data-name="Sanemi Shinazugawa" data-section="hashira">
               <button class="close-btn" aria-label="Close Sanemi Shinazugawa card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Sanemi Shinazugawa">❤️</button>
               <img src="Images/Slayers/Sanemi.webp" alt="Sanemi Shinazugawa" loading="lazy" />
               <div class="character-details">
                 <h3>Sanemi Shinazugawa</h3>
@@ -188,8 +149,9 @@
               </div>
             </div>
             <!-- Gyomei Himejima -->
-            <div class="character-container" data-name="Gyomei Himejima" data-section="hashira">
+            <div class="character-container stone-breathing" data-name="Gyomei Himejima" data-section="hashira">
               <button class="close-btn" aria-label="Close Gyomei Himejima card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Gyomei Himejima">❤️</button>
               <img src="Images/Slayers/Gyomei.webp" alt="Gyomei Himejima" loading="lazy" />
               <div class="character-details">
                 <h3>Gyomei Himejima</h3>

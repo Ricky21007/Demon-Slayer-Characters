@@ -15,7 +15,7 @@
     <nav class="sidebar" id="sidebar">
       <button id="sidebar-close" aria-label="Close sidebar">×</button>
       <ul>
-        <li><a href="index.html" data-section="welcome">Back to Welcome Page</a></li>
+        <li><a href="index.html" data-section="welcome">Home</a></li>
         <li><a href="slayers.html" data-section="demon-slayers">Demon Slayers</a></li>
         <li><a href="demons.html" data-section="demons">Demons</a></li>
         <li><a href="hashira.html" data-section="hashira">Hashira</a></li>
@@ -27,234 +27,146 @@
       <section id="character-list">
         <div class="category" id="upper-moons">
           <h2>Upper Moons</h2>
-          <!-- Character grid set to display cards horizontally via CSS -->
           <div class="character-grid">
             <!-- Muzan Kibutsuji -->
-            <div class="character-card muzan-blood" data-name="Muzan Kibutsuji" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Muzan Kibutsuji" aria-label="Add Muzan Kibutsuji to favorites">❤️</button>
-              <img src="Images/Demons/Muzan_Kibutsuji_Full_Body.webp" alt="Muzan Kibutsuji Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container muzan-blood" data-name="Muzan Kibutsuji" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Muzan Kibutsuji card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Muzan Kibutsuji">❤️</button>
+              <img src="Images/Demons/Muzan_Kibutsuji_Full_Body.webp" alt="Muzan Kibutsuji Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Muzan Kibutsuji</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Demon King</span>
                 <p>The first demon, driven to achieve immortality and invincibility.</p>
-                <h4>Family</h4>
-                <p>Adopts human disguises, has a faux family (wife and daughter).</p>
-                <h4>Rank</h4>
-                <p>King of Demons, leader of all demonic forces.</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, regeneration, shape-shifting, and speed.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Black Blood: Brambles, lethal whip-like attacks, biological manipulation.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Human-like appearance for disguise.<br>Combat Form: Enhanced limbs, whip-like appendages.<br>Final Form: Grotesque, massive body with mouths and tentacles.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Muzan_Kibutsuji_Full_Body.webp" alt="Muzan Normal Form">
-                <img src="Images/Demons/Muzan_comabat-form.webp" alt="Muzan Combat Form">
-                <img src="Images/Demons/Muzan_final-form.webp" alt="Muzan Final Form">
+                <p><strong>Family:</strong> Adopts human disguises, has a faux family (wife and daughter).</p>
+                <p><strong>Physical Abilities:</strong> Immense strength, regeneration, shape-shifting, and speed.</p>
+                <p><strong>Blood Demon Art:</strong> Black Blood: Brambles</p>
+                <p><strong>Forms:</strong> Normal Form: Human-like appearance; Combat Form: Enhanced limbs, whip-like appendages; Final Form: Grotesque, massive body with mouths and tentacles.</p>
               </div>
             </div>
             <!-- Kokushibo -->
-            <div class="character-card kokushibo-moon" data-name="Kokushibo" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Kokushibo" aria-label="Add Kokushibo to favorites">❤️</button>
-              <img src="Images/Demons/Kokushibo_normal-form.webp" alt="Kokushibo Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container kokushibo-moon" data-name="Kokushibo" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Kokushibo card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Kokushibo">❤️</button>
+              <img src="Images/Demons/Kokushibo-normal-form.webp" alt="Kokushibo Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Kokushibo</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank One</span>
                 <p>Former Demon Slayer Michikatsu Tsugikuni, turned demon out of envy.</p>
-                <h4>Family</h4>
-                <p>Brother: Yoriichi Tsugikuni; family from human life deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank One of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, speed, and swordsmanship.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Crescent Moon Blades: Chaotic, crescent-shaped blade attacks.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Six-eyed, samurai-like appearance.<br>Enhanced Form: Monstrous, blade-covered body with increased power.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Kokushibo_normal-form.webp" alt="Kokushibo Normal Form">
-                <img src="Images/Demons/Kokushibo_monstrous_final_form.webp" alt="Kokushibo Enhanced Form">
+                <p><strong>Family:</strong> Brother: Yoriichi Tsugikuni; family from human life deceased.</p>
+                <p><strong>Physical Abilities:</strong> Immense strength, speed, and swordsmanship.</p>
+                <p><strong>Blood Demon Art:</strong> Crescent Moon Blades</p>
+                <p><strong>Forms:</strong> Normal Form: Six-eyed, samurai-like appearance; Enhanced Form: Monstrous, blade-covered body.</p>
               </div>
             </div>
             <!-- Doma -->
-            <div class="character-card doma-ice" data-name="Doma" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Doma" aria-label="Add Doma to favorites">❤️</button>
-              <img src="Images/Demons/Doma.webp" alt="Doma" loading="lazy" class="character-img" />
+            <div class="character-container doma-ice" data-name="Doma" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Doma card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Doma">❤️</button>
+              <img src="Images/Demons/Doma.webp" alt="Doma" loading="lazy" />
               <div class="character-details">
                 <h3>Doma</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Two</span>
                 <p>A nihilistic demon, born with rainbow eyes, led a cult as a human.</p>
-                <h4>Family</h4>
-                <p>Parents saw him as divine, started a cult around him.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Two of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>High strength, speed, and regeneration.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Frozen Lotus: Cryokinetic attacks, ice clones, and frost mists.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Doma.webp" alt="Doma">
+                <p><strong>Family:</strong> Parents saw him as divine, started a cult around him.</p>
+                <p><strong>Physical Abilities:</strong> High strength, speed, and regeneration.</p>
+                <p><strong>Blood Demon Art:</strong> Frozen Lotus</p>
+                <p><strong>Forms:</strong> Single demon form, no major transformations.</p>
               </div>
             </div>
             <!-- Akaza -->
-            <div class="character-card akaza-shock" data-name="Akaza" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Akaza" aria-label="Add Akaza to favorites">❤️</button>
-              <img src="Images/Demons/Akaza.webp" alt="Akaza" loading="lazy" class="character-img" />
+            <div class="character-container akaza-shock" data-name="Akaza" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Akaza card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Akaza">❤️</button>
+              <img src="Images/Demons/Akaza.webp" alt="Akaza" loading="lazy" />
               <div class="character-details">
                 <h3>Akaza</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Three</span>
                 <p>A martial artist turned demon, seeks strong opponents.</p>
-                <h4>Family</h4>
-                <p>Father, fiancée Koyuki, and her father killed in human life.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Three of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Exceptional strength, speed, and martial arts skill.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Destructive Death: Shockwave-based attacks, combat sense.</p>
-                <h4>Forms</h4>
-                <p>Single demon form, no major transformations.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Akaza.webp" alt="Akaza">
+                <p><strong>Family:</strong> Father, fiancée Koyuki, and her father killed in human life.</p>
+                <p><strong>Physical Abilities:</strong> Exceptional strength, speed, and martial arts skill.</p>
+                <p><strong>Blood Demon Art:</strong> Destructive Death</p>
+                <p><strong>Forms:</strong> Single demon form, no major transformations.</p>
               </div>
             </div>
             <!-- Hantengu -->
-            <div class="character-card hantengu-emotion" data-name="Hantengu" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Hantengu" aria-label="Add Hantengu to favorites">❤️</button>
-              <img src="Images/Demons/Hantengu_Full_Body_Anime.webp" alt="Hantengu Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container hantengu-emotion" data-name="Hantengu" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Hantengu card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Hantengu">❤️</button>
+              <img src="Images/Demons/Hantengu_Full_Body_Anime.webp" alt="Hantengu Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Hantengu</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Four</span>
                 <p>A cowardly demon who splits into emotion-based clones.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Four of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, splitting into multiple bodies.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Emotion Manifestation: Creates clones of anger, pleasure, sorrow, joy, resentment.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Small, frail appearance.<br>Clones: Sekido (anger), Karaku (pleasure), Aizetsu (sorrow), Urogi (joy), Urami (resesentment).<br>Zohakuten: Merged, powerful dragon form.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Hantengu_Full_Body_Anime.webp" alt="Hantengu Normal Form">
-                <img src="Images/Demons/Sekido.webp" alt="Hantengu Sekido Clone">
-                <img src="Images/Demons/Karaku.webp" alt="Hantengu Karaku Clone">
-                <img src="Images/Demons/Aizetsu.webp" alt="Hantengu Aizetsu Clone">
-                <img src="Images/Demons/Urogi.webp" alt="Hantengu Urogi Clone">
-                <img src="Images/Demons/Urami.webp" alt="Hantengu Urami Clone">
-                <img src="Images/Demons/Zohakuten.webp" alt="Hantengu Zohakuten Form">
+                <p><strong>Family:</strong> Human family unknown.</p>
+                <p><strong>Physical Abilities:</strong> Regeneration, splitting into multiple bodies.</p>
+                <p><strong>Blood Demon Art:</strong> Emotion Manifestation</p>
+                <p><strong>Forms:</strong> Normal Form: Small, frail appearance; Clones: Sekido (anger), Karaku (pleasure), Aizetsu (sorrow), Urogi (joy), Urami (resentment); Zohakuten: Merged, powerful dragon form.</p>
               </div>
             </div>
             <!-- Gyokko -->
-            <div class="character-card gyokko-water" data-name="Gyokko" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Gyokko" aria-label="Add Gyokko to favorites">❤️</button>
-              <img src="Images/Demons/Gyokko.webp" alt="Gyokko Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container gyokko-water" data-name="Gyokko" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Gyokko card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Gyokko">❤️</button>
+              <img src="Images/Demons/Gyokko.webp" alt="Gyokko Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Gyokko</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Five</span>
                 <p>A grotesque, art-obsessed demon with a love for pots.</p>
-                <h4>Family</h4>
-                <p>Human family unknown.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Five of the Twelve Kizuki.</p>
-                <h4>Physical Abilities</h4>
-                <p>Regeneration, flexibility, and aquatic movement.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Porcelain Vases: Summons water-based attacks, fish demons from pots.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Pot-bound, scaly appearance.<br>True Form: Serpentine, scaled body with enhanced power.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Gyokko.webp" alt="Gyokko Normal Form">
-                <img src="Images/Demons/Gyokko_final-form.webp" alt="Gyokko True Form">
+                <p><strong>Family:</strong> Human family unknown.</p>
+                <p><strong>Physical Abilities:</strong> Regeneration, flexibility, and aquatic movement.</p>
+                <p><strong>Blood Demon Art:</strong> Porcelain Vases</p>
+                <p><strong>Forms:</strong> Normal Form: Pot-bound, scaly appearance; True Form: Serpentine, scaled body.</p>
               </div>
             </div>
             <!-- Daki -->
-            <div class="character-card daki-sash" data-name="Daki" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Daki" aria-label="Add Daki to favorites">❤️</button>
-              <img src="Images/Demons/Daki.webp" alt="Daki Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container daki-sash" data-name="Daki" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Daki card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Daki">❤️</button>
+              <img src="Images/Demons/Daki.webp" alt="Daki Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Daki</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Six</span>
                 <p>A cruel demon, works with brother Gyutaro in the Entertainment District.</p>
-                <h4>Family</h4>
-                <p>Brother: Gyutaro; human family deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (shared with Gyutaro).</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced strength, speed, and regeneration.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Obi Sash: Manipulates sashes for binding and slashing.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Beautiful, courtesan-like appearance.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Daki.webp" alt="Daki Normal Form">
+                <p><strong>Family:</strong> Brother: Gyutaro; human family deceased.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced strength, speed, and regeneration.</p>
+                <p><strong>Blood Demon Art:</strong> Obi Sash</p>
+                <p><strong>Forms:</strong> Normal Form: Beautiful, courtesan-like appearance.</p>
               </div>
             </div>
             <!-- Gyutaro -->
-            <div class="character-card gyutaro-sickle" data-name="Gyutaro" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Gyutaro" aria-label="Add Gyutaro to favorites">❤️</button>
-              <img src="Images/Demons/Gyutaro.webp" alt="Gyutaro Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container gyutaro-sickle" data-name="Gyutaro" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Gyutaro card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Gyutaro">❤️</button>
+              <img src="Images/Demons/Gyutaro.webp" alt="Gyutaro Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Gyutaro</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Six</span>
                 <p>Daki's protective brother, a vicious demon from the Entertainment District.</p>
-                <h4>Family</h4>
-                <p>Sister: Daki; human family deceased.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (shared with Daki).</p>
-                <h4>Physical Abilities</h4>
-                <p>Immense strength, speed, and poison-based attacks.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Blood Sickle: Creates flying, poisonous blood sickles.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Gaunt, scarred appearance emerging from Daki.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Gyutaro.webp" alt="Gyutaro Normal Form">
+                <p><strong>Family:</strong> Sister: Daki; human family deceased.</p>
+                <p><strong>Physical Abilities:</strong> Immense strength, speed, and poison-based attacks.</p>
+                <p><strong>Blood Demon Art:</strong> Blood Sickle</p>
+                <p><strong>Forms:</strong> Normal Form: Gaunt, scarred appearance emerging from Daki.</p>
               </div>
             </div>
             <!-- Kaigaku -->
-            <div class="character-card kaigaku-electro" data-name="Kaigaku" data-section="upper-moons">
-              <button class="favorite-btn" data-name="Kaigaku" aria-label="Add Kaigaku to favorites">❤️</button>
-              <img src="Images/Demons/Kaigaku.webp" alt="Kaigaku Normal Form" loading="lazy" class="character-img" />
+            <div class="character-container kaigaku-electro" data-name="Kaigaku" data-section="upper-moons">
+              <button class="close-btn" aria-label="Close Kaigaku card">×</button>
+              <button class="favorite-btn" aria-label="Toggle favorite Kaigaku">❤️</button>
+              <img src="Images/Demons/Kaigaku.webp" alt="Kaigaku Normal Form" loading="lazy" />
               <div class="character-details">
                 <h3>Kaigaku</h3>
-                <span class="badge">Upper Moon</span>
-                <h4>Background</h4>
+                <span class="subtitle">Upper Rank Six</span>
                 <p>A traitorous Demon Slayer turned demon, betrayed Jigoro.</p>
-                <h4>Family</h4>
-                <p>Human family unknown; orphaned.</p>
-                <h4>Rank</h4>
-                <p>Upper Rank Six of the Twelve Kizuki (replacement).</p>
-                <h4>Physical Abilities</h4>
-                <p>Enhanced speed, strength, and swordsmanship.</p>
-                <h4>Blood Demon Art</h4>
-                <p>Electrokinetic enhancement of Thunder Breathing techniques.</p>
-                <h4>Forms</h4>
-                <p>Normal Form: Demonized appearance with black markings.</p>
-                <h4>Images</h4>
-                <img src="Images/Demons/Kaigaku.webp" alt="Kaigaku Normal Form">
+                <p><strong>Family:</strong> Human family unknown; orphaned.</p>
+                <p><strong>Physical Abilities:</strong> Enhanced speed, strength, and swordsmanship.</p>
+                <p><strong>Blood Demon Art:</strong> Electrokinetic Thunder Breathing</p>
+                <p><strong>Forms:</strong> Normal Form: Demonized appearance with black markings.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <!-- Modal for enlarged image -->
-    <div id="image-modal" class="modal">
-      <span id="modal-close" class="modal-close" aria-label="Close modal">×</span>
-      <img class="modal-content" id="modal-image" alt="Enlarged Character Image" />
-    </div>
     <script src="script.js"></script>
   </div>
 </body>
